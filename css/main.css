@@ -1,0 +1,140 @@
+/********************************
+GENERAL
+********************************/
+
+#logo {
+    color: white;
+    float: left;
+    margin-left: 60px;
+    font-weight: 750;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wallpaper {
+    width: 100%;
+}
+
+#logo span {
+    color: #00B895;
+    font-size: 0.8em;
+}
+
+#about {
+    margin-top: -5px;
+    padding: 50px 80px;
+    border-bottom: 5px solid #323A45;
+}
+
+#pictures {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 28.33%;
+    margin: 2.4%;
+    border: 1px solid #ccc;
+}
+
+#gallery li p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 15px;
+}
+
+#gallery-title {
+    margin-top: 30px;
+    color: #323A45;
+}
+
+
+/********************************
+HEADING
+********************************/
+
+header {
+    float: left;
+    width: 100%;
+    background-color: #323A45;
+    margin: 0;
+    padding: 0;
+    border-bottom: 5px solid #00B895;
+}
+
+/********************************
+NAVIGATION
+********************************/
+
+nav {
+    float: right;
+    text-align: right;
+    padding: 0;
+    width: 45%;
+    margin-right: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 31px 30px;
+    margin: 0;
+}
+
+/********************************
+COLORS
+********************************/
+
+nav a {
+    color: #D5F3EE;
+}
+
+nav li:hover {
+    background-color: #00B895;
+}
+
+#about {
+    background-color: #45B39E;
+    color: #FFF;
+}
+
+#gallery li {
+    background-color: #45B39E;
+    color: #FFF;
+}
+
+/********************************
+FOOTER
+********************************/
+
+footer {
+    clear: both;
+    background-color: #323A45;
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+}
