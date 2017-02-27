@@ -4,15 +4,13 @@ GENERAL
 
 #logo {
     color: white;
-    float: left;
-    margin-left: 60px;
     font-weight: 750;
+    text-align: center;
 }
 
 h2 {
     margin: 0;
     text-align: center;
-    font-size: 40px;
 }
 
 a {
@@ -34,8 +32,15 @@ img {
 
 #about {
     margin-top: -5px;
-    padding: 50px 80px;
-    border-bottom: 5px solid #323A45;
+    padding: 5% 3%;
+}
+
+#about h2 {
+  font-size: 1.3em;
+}
+
+#about p {
+  font-size: 0.96em;
 }
 
 #pictures {
@@ -51,19 +56,20 @@ img {
 
 #gallery li {
     float: left;
-    width: 28.33%;
-    margin: 2.4%;
-    border: 1px solid #ccc;
+    width: 46%;
+    margin: 2%;
 }
 
 #gallery li p {
     text-align: center;
-    font-size: 1.2em;
-    margin: 15px;
+    font-size: .9em;
+    margin: 0;
+    padding: 5px;
 }
 
 #gallery-title {
-    margin-top: 30px;
+    font-size: 1.3em;
+    margin: 15px 0;
     color: #323A45;
 }
 
@@ -78,7 +84,6 @@ header {
     background-color: #323A45;
     margin: 0;
     padding: 0;
-    border-bottom: 5px solid #00B895;
 }
 
 /********************************
@@ -86,11 +91,8 @@ NAVIGATION
 ********************************/
 
 nav {
-    float: right;
-    text-align: right;
-    padding: 0;
-    width: 45%;
-    margin-right: 40px;
+    text-align: center;
+    background: #525f71;
 }
 
 nav ul {
@@ -101,8 +103,9 @@ nav ul {
 
 nav li {
     display: inline-block;
-    padding: 31px 30px;
-    margin: 0;
+    padding: 10px;
+    margin: 0 3px;
+    font-weight: bold;
 }
 
 /********************************
@@ -134,7 +137,97 @@ FOOTER
 footer {
     clear: both;
     background-color: #323A45;
+    font-size: .75em;
     text-align: center;
-    padding: 10px;
+    padding: 1px 5px;
     color: #FFF;
+}
+
+/********************************
+Media Queries
+********************************/
+
+@media (min-width: 660px) {
+  
+  header {
+    border-bottom: 5px solid #00B895;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 40px;
+  }
+  
+  nav {
+    float: right;
+    background: none;
+    padding: 0;
+    margin-right: 40px;
+  }
+  
+  nav li {
+    margin: 0;
+    padding: 31px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  nav li {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  
+  #gallery li {
+    width: 28.33%;
+    margin: 2.4%;
+  }
+  
+  #gallery li p {
+    font-size: 1em;
+    padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  
+  #logo {
+    margin-left: 60px;
+  }
+  
+  nav li {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  #about {
+    padding: 50px 80px;
+    border-bottom: 5px solid #323A45;
+  }
+  
+  #about h2 {
+    font-size: 2.5em;
+  }
+  
+  #about p {
+    font-size: 1em;
+  }
+  
+  #gallery-title {
+    font-size: 2.5em;
+    margin: 30px 0 0px;
+  }
+  
+  #gallery li {
+    width: 28.3%;
+    border: 1px solid #ccc;
+  }
+  
+  #gallery li p {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  
+  footer {
+    font-size: 1em;
+    padding: 10px;
+  }
 }
